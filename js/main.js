@@ -49,7 +49,7 @@ function carrusel2 (contenedor){
                 img.src = anuncios2[cont -1];
                 cont --;
             }else{
-                img.src = anuncios2[anuncios1.length -1];
+                img.src = anuncios2[anuncios2.length -1];
                 cont = anuncios2.length - 1;
             }
         }else if(tgt == adelante){
@@ -77,7 +77,7 @@ function carrusel3 (contenedor){
                 img.src = anuncios3[cont -1];
                 cont --;
             }else{
-                img.src = anuncios3[anuncios1.length -1];
+                img.src = anuncios3[anuncios3.length -1];
                 cont = anuncios3.length - 1;
             }
         }else if(tgt == adelante){
@@ -105,7 +105,7 @@ function carrusel4 (contenedor){
                 img.src = anuncios4[cont -1];
                 cont --;
             }else{
-                img.src = anuncios4[anuncios1.length -1];
+                img.src = anuncios4[anuncios4.length -1];
                 cont = anuncios4.length - 1;
             }
         }else if(tgt == adelante){
