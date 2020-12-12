@@ -18,6 +18,10 @@ h1 {
     width: 80rem;
 }
 
+.servicios{
+    font-size: 10px;
+}
+
 h2,
 h3,
 h4,
@@ -72,8 +76,8 @@ img {
 }
 
 img.pequeña{
-    width: 25px;
-    height: 18px;
+    width: 30px;
+    height: 25px;
     margin: 1%;
 }
 
