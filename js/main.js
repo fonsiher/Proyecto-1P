@@ -6,8 +6,8 @@ var anuncios1 = ['img/anuncio1.1.png','img/anuncio1.2.png','img/anuncio1.3.png']
     anuncios6 = ['img/anuncio6.1.png','img/anuncio6.2.png','img/anuncio6.3.png'],
     anuncios7 = ['img/anuncio7.1.png','img/anuncio7.2.png','img/anuncio7.3.png'],
     anuncios8 = ['img/anuncio8.1.png','img/anuncio8.2.png','img/anuncio8.3.png'],
-    anuncios9 = ['img/anuncio9.1.png','img/anuncio9.2.png','img/anuncio9.3.png'],
-    anuncios10 = ['img/anuncio10.1.png','img/anuncio10.2.png','img/anuncio10.3.png'],
+    anuncios9 = ['img/anuncio9.1.jpg','img/anuncio9.2.jpg','img/anuncio9.3.jpg'],
+    anuncios10 = ['img/anuncio10.1.jpg','img/anuncio10.2.jpg','img/anuncio10.3.jpg'],
     cont = 0;
 
 function carrusel (contenedor){
