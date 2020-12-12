@@ -1,0 +1,91 @@
+/*Datos generales*/
+
+* {
+    font-family: 'Anton', sans-serif;
+    margin: 1rem;
+}
+
+.fondo {
+    background-image: url("/img/fondo.jpg");
+}
+
+h1 {
+    border: 0.6rem outset rgb(246, 246, 247);
+    font-family: serif;
+    color: aliceblue;
+    text-align: center;
+    background-color: rgb(16, 19, 61);
+    width: 80rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+ul {
+    color: rgb(218, 218, 218);
+}
+
+h3 {
+    border: 0.3rem outset rgb(3, 3, 3);
+    text-align: center;
+    color: black;
+    background-color: rgb(156, 162, 231);
+    width: 20rem;
+}
+
+h2 {
+    border: 0.4rem outset rgb(251, 251, 252);
+    text-align: center;
+    background-color: rgb(5, 8, 32);
+    width: 15rem;
+}
+
+h4 {
+    border: 0.3rem outset rgb(8, 8, 8);
+    color: black;
+    text-align: justify;
+    background-color: rgb(156, 162, 231);
+    width: 35rem;
+}
+
+
+/*head*/
+
+.navegacion a {
+    color: white;
+    background-color: rgb(6, 7, 34);
+    margin: 0.4;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navegacion.a:hover {
+    color: whitesmoke;
+    background-color: black;
+}
+
+img {
+    width: 10rem;
+}
+
+
+/*main*/
+
+.principal {
+    display: flex;
+    text-align: center;
+    margin: auto;
+}
+
+.formularios {
+    display: flex;
+    text-align: center;
+    margin: auto;
+}
+
+
+/*section*/
+
+
+/*footer*/
