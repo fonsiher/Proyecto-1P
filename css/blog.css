@@ -7,12 +7,11 @@
     padding-left: 2%;
 }
 
-img{
+img {
     width: 100%;
     width: 1400px;
     height: 250px;
-   background-size: cover;
-    
+    background-size: cover;
 }
 
 h1 {
@@ -21,13 +20,13 @@ h1 {
     color: aliceblue;
     text-align: center;
     background-color: rgb(16, 19, 61);
-    width: 80rem;
+    width: 84rem;
 }
 
 h2,
 h3,
 h4 {
-    color:steelblue;
+    color: steelblue;
     font-family: cursive;
 }
 
@@ -46,23 +45,27 @@ img.logo {
 }
 
 nav {
-	/*Bordes redondeados*/
-	-webkit-border-radius: 10px; /*Para chrome y Safari*/
-	-moz-border-radius: 10px; /*Para Firefox*/
-	-o-border-radius: 10px; /*Para Opera*/
-	border-radius: 10px; /*El estandar por defecto*/
-	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(161, 226, 161)),
-		to(#8bcceb)); /*Para chrome y Safari*/
-	/*Degradados*/
-	background-image: -moz-linear-gradient(top center, #FFF, #8bcceb);
-	/*Para Firefox*/
-	background-image: -o-linear-gradient(top, #FFF, #8bcceb);
-	/*Para Opera*/
-	background-image: linear-gradient(top, #FFF, #8bcceb);
-	/*El estandar por defecto*/
-	overflow: hidden;
-	padding: 5px;
-	width: 100%;
+    /*Bordes redondeados*/
+    -webkit-border-radius: 10px;
+    /*Para chrome y Safari*/
+    -moz-border-radius: 10px;
+    /*Para Firefox*/
+    -o-border-radius: 10px;
+    /*Para Opera*/
+    border-radius: 10px;
+    /*El estandar por defecto*/
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(161, 226, 161)), to(#8bcceb));
+    /*Para chrome y Safari*/
+    /*Degradados*/
+    background-image: -moz-linear-gradient(top center, #FFF, #8bcceb);
+    /*Para Firefox*/
+    background-image: -o-linear-gradient(top, #FFF, #8bcceb);
+    /*Para Opera*/
+    background-image: linear-gradient(top, #FFF, #8bcceb);
+    /*El estandar por defecto*/
+    overflow: hidden;
+    padding: 5px;
+    width: 100%;
 }
 
 nav ul {
