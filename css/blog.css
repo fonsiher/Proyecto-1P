@@ -1,0 +1,16 @@
+.descripcion {
+    background-color: #33FFE8;
+    width: auto;
+    height: auto;
+    position: relative;
+    padding-top: 1%;
+    padding-left: 2%;
+}
+
+img{
+    width: 100%;
+    width: 1400px;
+    height: 250px;
+   background-size: cover;
+    
+}
