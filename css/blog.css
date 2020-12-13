@@ -131,3 +131,14 @@ nav ul li a {
 nav ul li a:hover {
     color: #000;
 }
+
+b.detalle{
+    color: orange;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.anuncio{
+    font-family: sans-serif;
+    font-size: 18px;
+    margin: 3%;
+}
