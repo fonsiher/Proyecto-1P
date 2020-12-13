@@ -441,11 +441,12 @@ label.calendario {
 
 /*footer*/
 
-.ultimo{
+p{
     text-align: center;
     padding: 4px;
     color: rgb(5, 1, 1);
-    background-color: rgb(83, 166, 204); 
+    background-color: rgb(89, 92, 216); 
+    text-transform: uppercase;
 }
 
 
