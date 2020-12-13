@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/estilo.css" type="text/css">
+    <link rel="stylesheet" href="css/reservar.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>RESERVAR</title>
+</head>
+<style>
+    input {
+        width: 208px;
+        height: 20px;
+    }
+</style>
+
+<body bgcolor=#A9DCF6>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="/img/logo.png" alt="imagen del logo" class="logo"></a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="anuncios.html">ANUNCIOS</a></li>
+                <li><a href="promociones.html">PROMOCIONES</a></li>
+                <li><a href="contactanos.html">CONTACTANOS</a></li>
+                
+            </ul>
+            
+        </nav>
+        
+    </header>
+    <h1>Reservar</h1>
+    
+
+    <main class="principalr">
+        <h3>Reservación</h3>
+        
+        <div class="container">
+            <form action="">
+            <label >Seleccione el inmueble:</label>
+            <select name="cifrado" id="cifrado" onchange="mostrarLabel();">
+                <option value="">Elija una opción:</option>
+                <option value="1">Departamento Nuevo Edificio "El Algarrobo", en el Norte de Quito</option>
+                <option value="2">Departamento Excelente, sector de Carapungo</option>
+                <option value="3">Casa de 2 pisos con piscina en Cumbayá</option>
+                <option value="4">Casa Familiar de 2 pisos en la armenia baja</option>
+                <option value="5">Acogedor Apartamento en Ciudad Bicentenario</option>
+                <option value="6">Casa de dos pisos, en Conjunto Habitacional en Conocoto</option>
+                <option value="7">Casa Moderna de 2 pisos en sector de Solca</option>
+                <option value="8">Casa muy cómoda, en zona rural de Quito</option>
+                <option value="9">Departamento Villa del Rey - Valle de los Chillos</option>
+                <option value="10">Departamento en sector de la Viña - Cumbayá</option>
+            </select> 
+            <label id="anuncio1" >Precio: 45 USD por noche <a href="">Ver Anuncio</a></label>
+            <label id="anuncio2">Precio: 30 USD por noche / por Adulto <a href="">Ver Anuncio</a></label>
+            <label id="anuncio3">Precio: 150 USD por noche <a href="">Ver Anuncio</a></label>
+            <label id="anuncio4">Precio: 65 USD por noche / por Adulto <a href="">Ver Anuncio</a></label>
+            <label id="anuncio5">Precio: 25 USD por noche /por Adulto <a href="">Ver Anuncio</a></label>
+            <label id="anuncio6">Precio: 70 USD por noche <a href="">Ver Anuncio</a></label>
+            <label id="anuncio7">Precio: 80 USD por noche <a href="">Ver Anuncio</a></label>
+            <label id="anuncio8">Precio: 75 USD por noche <a href="">Ver Anuncio</a></label>
+            <label id="anuncio9">Precio: 80 USD por noche <a href="">Ver Anuncio</a></label>
+            <label id="anuncio10">Precio: 95 USD por noche <a href="">Ver Anuncio</a></label>
+
+
+            <label >Nombre</label>
+            <input type="text"  name="nombre" placeholder="Nombre">
+
+            <label >Cédula</label>
+            <input type="number"  name="cedula" placeholder="Cédula">
+            
+            <label >Teléfono</label>
+            <input type="number"  name="teléfono" placeholder="Teléfono">
+
+            <label >Número de días:</label>
+            <button  style="width:50px;text-align: center;" class="btn btn-default" id="menos3" type="button">-</button>
+            <input type="text" style="width:70px;text-align: center;" id="contador3" value="1"  />
+            <button style="width:50px;text-align: center;" class="btn btn-default" id="mas3" type="button">+</button>
+                                    
+            <label >Adultos:</label>
+            <button  style="width:50px;text-align: center;" class="btn btn-default" id="menos" type="button">-</button>
+            <input type="text" style="width:70px;text-align: center;" id="contador" value="0"  />
+            <button style="width:50px;text-align: center;" class="btn btn-default" id="mas" type="button">+</button>
+            
+            <label >Niños: (50% descuento)</label>
+            <button  style="width:50px;text-align: center;" class="btn btn-default" id="menos2" type="button">-</button>
+            <input type="text"  style="width:70px;text-align: center;" id="contador2"  value="0"  />
+            <button style="width:50px;text-align: center;" class="btn btn-default" id="mas2" type="button">+</button>
+            
+            <label >Costo Total:</label><input  id="costo" type="number" style="width:120px;text-align: center;" disabled/>
+        
+                <input type="submit" value="Reservar">
+            </form>
+            </div>
+    
+
+
+    </main>
+
+    <script src="js/reservar.js"></script> 
+
+    
+</body>
+
+</html>
