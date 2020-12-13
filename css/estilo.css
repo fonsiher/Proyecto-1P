@@ -72,6 +72,7 @@ h4 {
 }
 
 nav {
+<<<<<<< HEAD
     /*Bordes redondeados*/
     -webkit-border-radius: 10px;
     /*Para chrome y Safari*/
@@ -93,6 +94,25 @@ nav {
     overflow: hidden;
     padding: 5px;
     width: 97%;
+=======
+	/*Bordes redondeados*/
+	-webkit-border-radius: 10px; /*Para chrome y Safari*/
+	-moz-border-radius: 10px; /*Para Firefox*/
+	-o-border-radius: 10px; /*Para Opera*/
+	border-radius: 10px; /*El estandar por defecto*/
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(161, 226, 161)),
+		to(#8bcceb)); /*Para chrome y Safari*/
+	/*Degradados*/
+	background-image: -moz-linear-gradient(top center, #FFF, #8bcceb);
+	/*Para Firefox*/
+	background-image: -o-linear-gradient(top, #FFF, #8bcceb);
+	/*Para Opera*/
+	background-image: linear-gradient(top, #FFF, #8bcceb);
+	/*El estandar por defecto*/
+	overflow: hidden;
+	padding: 5px;
+	width: 97%;
+>>>>>>> e5f63254ced72f3b9c98356e2ca12b07ab49dfdc
 }
 
 nav ul {
@@ -447,11 +467,19 @@ label.calendario {
 
 /*footer*/
 
+<<<<<<< HEAD
 p {
     text-align: center;
     padding: 4px;
     color: rgb(250, 248, 248);
     background-color: rgb(4, 2, 37);
+=======
+p{
+    text-align: center;
+    padding: 4px;
+    color: rgb(5, 1, 1);
+    background-color: rgb(89, 92, 216); 
+>>>>>>> e5f63254ced72f3b9c98356e2ca12b07ab49dfdc
     text-transform: uppercase;
 }
 
