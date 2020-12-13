@@ -295,12 +295,13 @@ button {
     margin-bottom: 10px;
     margin-top: 10px;
     text-transform: uppercase;
-    background-color: #b32400;
+    background-color: #000000;
     border-color: #080224;
     border-style: solid;
     border-radius: 8px;
     width: 180px;
     cursor: pointer;
+    color: #faf9f9;
 }
 
 button p {
