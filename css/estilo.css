@@ -25,7 +25,7 @@ h1 {
 h2,
 h3,
 h4,
-h5 {
+{
     color: rgb(218, 218, 218);
 }
 
@@ -34,7 +34,7 @@ li {
     color: #14254E
 }
 
-h3 {
+h3,h5 {
     color: seagreen;
     text-transform: uppercase;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -85,6 +85,18 @@ img.logo {
     width: 120px;
     height: 100px;
     margin: 1%;
+}
+
+img.somos {
+    width: 320px;
+    height: 320px;
+    margin: 1%;
+
+}
+
+img.anuncios{
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -323,15 +335,12 @@ span {
     color: #faf9f9;
 }
 
-label {
+label.calendario {
     display: block;
     font: 1rem 'Fira Sans', sans-serif;
 }
 
-input,
-label {
-    margin: .4rem 0;
-}
+
 
 .boton_personalizado {
     text-decoration: none;
