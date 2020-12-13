@@ -25,6 +25,43 @@
 
     </header>
     <h1>Anuncios</h1>
+
+    <div class="sidebar">
+        <h3 style="text-align: center;">Cotizar</h3>
+        <form action="mailto:empresa@arriendos.com" method="POST" enctype="text/plain">
+            <h3>Nombre</h3>
+            <input type="text" name="nombre" placeholder="Nombre" required="obligatorio">
+            <h3>Email</h3>
+            <input type="text" name="email" placeholder="Email" required="obligatorio">
+            <h3>Tipo de inmueble</h3>
+            <input type="radio" id="male" name="Tipo" value="Casa">
+            <label for="male" style="text-align: center;">Casa</label><br>
+            <input type="radio"  id="female" name="Tipo" value="Departamento">
+            <label for="female"  style="text-align: center;">Departamento</label><br>
+            <h3>Habitaciones</h3>
+            <select name="Habitaciones" >
+                <option value="">Elija una opción:</option>
+                <option value="1 habitacion">1 habitación</option>
+                <option value="2 habitacion">2 habitación</option>
+                <option value="3 habitacion">3 habitación</option>
+                <option value="4 habitacion">4 habitación</option>
+                <option value="5 habitacion">5 habitación</option>
+                <option value="6 habitacion">6 habitación</option>
+            </select>   
+            <h3>Precio por noche:</h3>
+            <div class="slidecontainer">
+                <input type="range" name="Precio" min="10" max="150" value="10" class="slider" id="myRange">
+                <p style="color:black">Precio: <span id="demo"></span></p>
+              </div>
+              <script src="js/sidebar.js"></script> 
+            
+              <input  style="background-color: #4CAF50;" type="submit" value="ENVIAR CORREO">
+              </form>
+              <a href="https://wa.me/+593999262546?text=Estoy Interesado en los Arriendos"><button style="background-color:#4CAF50; color: black; width: 85%; height: 5%;">Contacto WhatsApp</button></a>
+          
+    </div>
+
+    <div class="content">
     <main class="principal2">
         <div class="contenedor" align="left">
             
@@ -676,7 +713,8 @@
                         </dt>
                 </dl>
             </div>
+            
     </section>
-
+</div>
 </body>
 </html>
