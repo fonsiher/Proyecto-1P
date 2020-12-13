@@ -22,6 +22,12 @@
         background-color: rgb(180, 71, 77);
         width: 80rem;
     }
+
+    button {
+        width: 180px;
+    }
+
+    
 </style>
 
 <body>
@@ -42,25 +48,24 @@
     <h1>PROMOCIONES</h1>
 
     <main class="principal2">
-
         <div class="contenedor" align="left">
-
+            
             <div class="atras botones">
                 &#60
             </div>
             <div class="adelante botones">
                 &#62
             </div>
-            <img src="img/anuncio1.1.png" alt="imagen">
-
+            <a href="blog1.html"><img src="img/anuncio1.1.png" alt="imagen" class="anuncios"></a>
+        
         </div>
+    
+        <script src="js/main.js"></script> 
 
-        <script src="js/main.js"></script>
-
-        <div class="descripcion">
-            <h3 align="center">Departamento Nuevo Edificio "El Algarrobo", en el Norte de Quito</h3>
-
-            <div align="left">
+        <div class= "descripcion">
+            <a href="blog1.html"><h3 align="center">Departamento Nuevo en Edificio, en el Norte de Quito</h3></a>
+            
+            <div align="left"> 
                 <b>-Excelente departamento de lujo de 80m cuadrados , en el Sector del Bosque, al norte de Quito.</b> <br>
                 <dl>
                     <dt><b>Ambientes: </b></dt>
@@ -68,26 +73,25 @@
                         <ul>
                             <li>Cocina, con Refrigerador y Cafetera</li>
                             <li>2 Baños</li>
-                            <li>3 Dormitorios</li>
+                            <li>3 Dormitorios (2 Grandes - 1 Pequeño)</li>
                             <li>Comedor Familiar</li>
                         </ul>
                     </dd>
                     <dt><b>Servicios:</b> </dt>
                     <dd>
-
-                        <b class="servicios">&nbspWifi &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parqueadero &nbsp;  
-                        &nbsp;&nbsp;&nbsp;&nbsp;Piscina &nbsp; &nbsp; Habitaciones Familiares</b>
+                        
+                      <b class="servicios">&nbspWifi &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parqueadero &nbsp;  
+                        &nbsp;&nbsp;&nbsp;&nbsp;Piscina &nbsp; &nbsp; Habitaciones Familiares</b>  
                     </dd>
                     <dd>
-                        &nbsp;&nbsp;<img src="img/wifi.png" alt="imagen" class="pequeña"> &nbsp; &nbsp; &nbsp;
-                        <img src="img/parqueo.png" alt="imagen" class="pequeña">&nbsp; &nbsp;
+                        &nbsp;&nbsp;<img src="img/wifi.png" alt="imagen" class="pequeña"> &nbsp;  &nbsp; &nbsp;    
+                        <img src="img/parqueo.png" alt="imagen" class="pequeña">&nbsp;  &nbsp; 
                         <img src="img/piscina.png" alt="imagen" class="pequeña">&nbsp; &nbsp; &nbsp;&nbsp;
                         <img src="img/familiar.png" alt="imagen" class="pequeña">
-
                     </dd>
-                    <dt><b>Precio: </b>  90 USD por noche</dt>
+                    <dt><b>Precio: </b>  45 USD por noche</dt>
                     <dt>
-                    <details>
+                        <details>
                             <summary><b>Mira si las fechas que deseas están disponibles: </b></summary>
                             <form action="" method="GET">
                                 <label>Fecha de inicio de estadía:</label>
@@ -98,7 +102,7 @@
                                 <input type="date" id="end" name="trip-end"
                                 value="2020-12-14"
                                 min="2020-12-13" max="2021-12-31">
-                                <button>Comprobar</button>
+                                <button id="mybutton" onclick="alert('Las Fechas elegidas están disponibles');">Comprobar</button>
                             </form>
 
 
@@ -106,55 +110,59 @@
                         </details>
                         </dt>
                 </dl>
-
+                
             </div>
-
+            
+            
+            
         </div>
-
     </main>
     <h2>15% OFF</h2>
     <section class="principal2">
         <div class="contenedor2">
-
+            
             <div class="atras botones">
                 &#60
             </div>
             <div class="adelante botones">
                 &#62
             </div>
-            <img src="img/anuncio2.1.png" alt="imagen">
-            <script src="js/main.js"></script>
+            <a href="blog2.html"><img src="img/anuncio2.1.png" alt="imagen" class="anuncios"></a>
+            <script src="js/main.js"></script> 
         </div>
-        <div class="descripcion">
-
-            <h3 align="center">Departamento Excelente, sector de Carapungo</h3>
-            <div align="left">
-                <b>-Excelente departamento de lujo de 80m cuadrados , en el Sector del Bosque, al norte de Quito.</b> <br>
+        <div class= "descripcion">
+            <a href="blog2.html"><h3 align="center">Departamento Excelente, sector de Carapungo</h3></a>
+            <div align="left"> 
+                <b>Situado 3 km del Terminal Terrestre, cuenta con varias facilidades para familias, en un buen lugar y bastante acogedor.</b> <br>
                 <dl>
                     <dt><b>Ambientes: </b></dt>
                     <dd>
                         <ul>
-                            <li>Cocina, con Refrigerador y Cafetera</li>
-                            <li>2 Baños</li>
-                            <li>3 Dormitorios</li>
-                            <li>Comedor Familiar</li>
+                            <li>Cocina, con Refrigerador, Licuadora, Cafetera y Lava platos</li>
+                            <li>2 Baños con Ducha Caliente</li>
+                            <li>2 Dormitorios Medianos</li>
+                            <li>Comedor</li>
                         </ul>
                     </dd>
                     <dt><b>Servicios:</b> </dt>
                     <dd>
-
-                        <b class="servicios">&nbspWifi &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parqueadero &nbsp;  
-                        &nbsp;&nbsp;&nbsp;&nbsp;Piscina &nbsp; &nbsp; Habitaciones Familiares</b>
+                        
+                      <b class="servicios">&nbsp;Wifi &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parqueadero &nbsp;  
+                         &nbsp; &nbsp; Habitaciones Familiares
+                         &nbsp;  &nbsp; &nbsp;&nbsp;
+                         Juegos Infantiles
+                        </b>  
                     </dd>
                     <dd>
-                        &nbsp;&nbsp;<img src="img/wifi.png" alt="imagen" class="pequeña"> &nbsp; &nbsp; &nbsp;
-                        <img src="img/parqueo.png" alt="imagen" class="pequeña">&nbsp; &nbsp;
-                        <img src="img/piscina.png" alt="imagen" class="pequeña">&nbsp; &nbsp; &nbsp;&nbsp;
-                        <img src="img/familiar.png" alt="imagen" class="pequeña">
+                        &nbsp;&nbsp;<img src="img/wifi.png" alt="imagen" class="pequeña"> &nbsp;  &nbsp; &nbsp;    
+                        <img src="img/parqueo.png" alt="imagen" class="pequeña">&nbsp;  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                        <img src="img/familiar.png" alt="imagen" class="pequeña">&nbsp;  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                        &nbsp;  &nbsp; &nbsp;&nbsp;&nbsp;
+                        <img src="img/juegos.png" alt="juegos" class="pequeña">
                     </dd>
-                    <dt><b>Precio: </b>  75 USD por noche</dt>
+                    <dt><b>Precio: </b>  30 USD por noche / por Adulto</dt>
                     <dt>
-                    <details>
+                        <details>
                             <summary><b>Mira si las fechas que deseas están disponibles: </b></summary>
                             <form action="" method="GET">
                                 <label>Fecha de inicio de estadía:</label>
@@ -165,17 +173,18 @@
                                 <input type="date" id="end" name="trip-end"
                                 value="2020-12-14"
                                 min="2020-12-13" max="2021-12-31">
-                                <button>Comprobar</button>
+                                <button id="mybutton" onclick="alert('Las Fechas elegidas están disponibles');">Comprobar</button>
                             </form>
 
 
 
                         </details>
                         </dt>
+                    
                 </dl>
             </div>
         </div>
-
+        
     </section>
     <h2>30% OFF</h2>>
 
@@ -188,11 +197,11 @@
             <div class="adelante botones">
                 &#62
             </div>
-            <img src="img/anuncio9.1.jpg" alt="imagen">
+            <a href="blog9.html"><img src="img/anuncio9.1.jpg" alt="imagen" class="anuncios"></a>
             <script src=""></script>
         </div>
         <div class="descripcion">
-            <h3 align="center">Departamento Villa del Rey - Valle de los Chillos"</h3>
+           <a href="blog9.html"><h3 align="center">Departamento Villa del Rey - Valle de los Chillos"</h3></a> 
             <div align="left">
                 <b>-Excelente departamento de lujo de 110m cuadrados , en el conjunto "Villa del Rey", En el Valle de los Chillos.</b> <br>
                 <dl>
@@ -223,7 +232,7 @@
                     </dd>
                     <dt><b>Precio: </b>  80 USD por noche</dt>
                     <dt>
-                    <details>
+                        <details>
                             <summary><b>Mira si las fechas que deseas están disponibles: </b></summary>
                             <form action="" method="GET">
                                 <label>Fecha de inicio de estadía:</label>
@@ -234,7 +243,7 @@
                                 <input type="date" id="end" name="trip-end"
                                 value="2020-12-14"
                                 min="2020-12-13" max="2021-12-31">
-                                <button>Comprobar</button>
+                                <button id="mybutton" onclick="alert('Las Fechas elegidas están disponibles');">Comprobar</button>
                             </form>
 
 
@@ -244,7 +253,6 @@
                 </dl>
             </div>
         </div>
-
     </section>
     <<h2>25% OFF</h2>
     
