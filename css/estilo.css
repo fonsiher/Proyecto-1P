@@ -80,7 +80,7 @@ nav {
 	-moz-border-radius: 10px; /*Para Firefox*/
 	-o-border-radius: 10px; /*Para Opera*/
 	border-radius: 10px; /*El estandar por defecto*/
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF),
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(161, 226, 161)),
 		to(#8bcceb)); /*Para chrome y Safari*/
 	/*Degradados*/
 	background-image: -moz-linear-gradient(top center, #FFF, #8bcceb);
