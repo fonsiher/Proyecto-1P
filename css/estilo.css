@@ -326,6 +326,21 @@ label {
     margin: .4rem 0;
 }
 
+.boton_personalizado {
+    text-decoration: none;
+    padding: 20px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #130338;
+    border-radius: 20px;
+    border: 2px solid #000000;
+    height: 8rem;
+    width: 8rem;
+    margin-top: 9rem;
+}
+
+
 /*section*/
 
 
