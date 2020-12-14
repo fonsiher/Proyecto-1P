@@ -9,6 +9,7 @@
     var A8 = document.getElementById('anuncio8');
     var A9 = document.getElementById('anuncio9');
     var A10 = document.getElementById('anuncio10');
+    var impresion = document.getElementById('reserva');
     var select = document.getElementById('cifrado');
     var valorSeleccionado;
     let searchParams = new URLSearchParams(window.location.search);
@@ -30,6 +31,7 @@
   A8.style.display = "none";
   A9.style.display = "none";
   A10.style.display = "none";
+  impresion.style.display = "none";
 
   valorSeleccionado = select.value;
   if(valorSeleccionado == '1'){
@@ -330,6 +332,20 @@ var restarD = document.getElementById("menos3");
 var contadorD = document.getElementById("contador3");
 var costo = document.getElementById("costo");
 var calculo = document.getElementById("calcular");
+var btnreservar = document.getElementById("btnreservar");
+
+            var inmueble=document.getElementById('inmueble');
+            var nom=document.getElementById('nom');
+            var ced=document.getElementById('ced');
+            var tel=document.getElementById('tel');
+            var dia=document.getElementById('dia');
+            var adul=document.getElementById('adul');
+            var nin=document.getElementById('nin');
+            var costot=document.getElementById('Icosto');
+
+            var n=document.getElementById('n');
+            var c=document.getElementById('c');
+            var t=document.getElementById('t');
 
 
 
@@ -396,11 +412,49 @@ var calculo = document.getElementById("calcular");
     function final (precio1, precio2){
         var total = precio1 + precio2;
         costo.value = total; 
+
+        if(select.value == '1'){
+          inmueble.value = 'Departamento Nuevo Edificio "El Algarrobo", en el Norte de Quito';
+        } else if(select.value == '2'){
+          inmueble.value = 'Departamento Excelente, sector de Carapungo';
+        }else if(select.value == '3'){
+          inmueble.value = 'Casa de 2 pisos con piscina en Cumbayá';
+        }else if(select.value == '4'){
+          inmueble.value = 'Casa Familiar de 2 pisos en la armenia baja';
+        }else if(select.value == '5'){
+          inmueble.value = 'Acogedor Apartamento en Ciudad Bicentenario';
+        }else if(select.value == '6'){
+          inmueble.value = 'Casa de dos pisos, en Conjunto Habitacional en Conocoto';
+        }else if(select.value == '7'){
+          inmueble.value = 'Casa Moderna de 2 pisos en sector de Solca';
+        }else if(select.value == '8'){
+          inmueble.value = 'Casa muy cómoda, en zona rural de Quito';
+        }else if(select.value == '9'){
+          inmueble.value = 'Departamento Villa del Rey - Valle de los Chillos';
+        }else if(select.value == '10'){
+          inmueble.value = 'Departamento en sector de la Viña - Cumbayá';
+        }
+       
+        nom.value = n.value;
+        ced.value = c.value;
+        tel.value = t.value;
+        dia.value  = contadorD.value;
+        adul.value = contadorA.value;
+        nin.value = contadorN.value;
+        costot.value = costo.value;
+        
     }
           
         
     
-
+    function mostrar(id)
+        {
+          var objeto=document.getElementById(id)
+          if(objeto.style.display=="block")
+              objeto.style.display="none";
+          else
+              objeto.style.display="block";   
+        }
 
         
         

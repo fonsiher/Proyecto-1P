@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/estilo.css" type="text/css">
     <link rel="stylesheet" href="css/reservar.css" type="text/css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
 
     <title>RESERVAR</title>
 </head>
@@ -20,6 +19,7 @@
 </style>
 
 <body bgcolor=#A9DCF6>
+   
     <header>
         <nav>
             <ul>
@@ -41,7 +41,7 @@
         <h3>Reservación</h3>
         
         <div class="container">
-            <form action="">
+            <form >
             <label >Seleccione el inmueble:</label>
             <select name="cifrado" id="cifrado" onchange="mostrarLabel();">
                 <option value="">Elija una opción:</option>
@@ -69,13 +69,13 @@
 
 
             <label >Nombre</label>
-            <input type="text"  name="nombre" placeholder="Nombre">
+            <input id="n" type="text"  name="nombre" placeholder="Nombre">
 
             <label >Cédula</label>
-            <input type="number"  name="cedula" placeholder="Cédula">
+            <input id="c" type="number"  name="cedula" placeholder="Cédula">
             
             <label >Teléfono</label>
-            <input type="number"  name="teléfono" placeholder="Teléfono">
+            <input id="t" type="number"  name="teléfono" placeholder="Teléfono">
 
             <label >Número de días:</label>
             <button  style="width:50px;text-align: center;" class="btn btn-default" id="menos3" type="button">-</button>
@@ -93,11 +93,37 @@
             <button style="width:50px;text-align: center;" class="btn btn-default" id="mas2" type="button">+</button>
             
             <label >Costo Total:</label><input  id="costo" type="number" style="width:120px;text-align: center;" disabled/>
-                <input type="submit" value="Reservar">
+        
+                
             </form>
+            <input onclick="mostrar('reserva')" type="submit" value="Reservar">
+           
+           
+           
             </div>
     
-
+            <div id="reserva" class="container">
+                    <h3>Datos de Reservación</h3>
+                    Inmueble:<br><input  id="inmueble" type="text" style="widows: 500px;text-align: center;" disabled/>
+                    <br>
+                    Nombre:<br><input  id="nom" type="text" style="widows: 500px;text-align: center;" disabled/>
+                    <br>
+                    Cédula:<br><input  id="ced" type="number" style="widows: 47px;text-align: center;" disabled/>
+                    <br>
+                    Teléfono:<br><input  id="tel" type="number" style="widows: 47px;text-align: center;" disabled/>
+                    <br>
+                    Días:<input  id="dia" type="number" style="width:65px;text-align: center;" disabled/>
+                    <br>
+                    Adultos:<input  id="adul" type="number" style="width:65px;text-align: center;" disabled/>
+                    <br>
+                    Niños:<input  id="nin" type="number" style="width:65px;text-align: center;" disabled/>
+                    <br>
+                    Costo Total:<input  id="Icosto" type="number" style="width:120px;text-align: center;" disabled/>
+                    <br>
+                    <button  onclick="alert('Reservación Exitosa');">Comprobar</button>
+                
+            </div>
+           
 
     </main>
 
