@@ -10,6 +10,12 @@
     var A9 = document.getElementById('anuncio9');
     var A10 = document.getElementById('anuncio10');
     var select = document.getElementById('cifrado');
+    var valorSeleccionado;
+    let searchParams = new URLSearchParams(window.location.search);
+
+    var variable = searchParams.get('variable');
+    
+    select.value = variable;
 
     var precio = 0;
     
@@ -24,12 +30,155 @@
   A8.style.display = "none";
   A9.style.display = "none";
   A10.style.display = "none";
-  
-function mostrarLabel(){
-	var valorSeleccionado = select.value;
+
+  valorSeleccionado = select.value;
   if(valorSeleccionado == '1'){
       precio = 45;
-        A1.style.display = "block";
+          A1.style.display = "block";
+  		
+          A2.style.display = "none";
+          A3.style.display = "none";
+          A4.style.display = "none";
+          A5.style.display = "none";
+          A6.style.display = "none";
+          A7.style.display = "none";
+          A8.style.display = "none";
+          A9.style.display = "none";
+          A10.style.display = "none";
+    	
+  } else if(valorSeleccionado  == '2'){
+      precio = 30;
+    A1.style.display = "none";
+    A2.style.display = "block";
+    A3.style.display = "none";
+    A4.style.display = "none";
+    A5.style.display = "none";
+    A6.style.display = "none";
+    A7.style.display = "none";
+    A8.style.display = "none";
+    A9.style.display = "none";
+    A10.style.display = "none";
+  }
+  else if(valorSeleccionado  == '3'){
+    precio = 150;
+    A1.style.display = "none";
+    A2.style.display = "none";
+    A3.style.display = "block";
+    A4.style.display = "none";
+    A5.style.display = "none";
+    A6.style.display = "none";
+    A7.style.display = "none";
+    A8.style.display = "none";
+    A9.style.display = "none";
+    A10.style.display = "none";
+
+  }
+  else if(valorSeleccionado  == '4'){
+    precio = 65;
+    A1.style.display = "none";
+    A2.style.display = "none";
+    A3.style.display = "none";
+    A4.style.display = "block";
+    A5.style.display = "none";
+    A6.style.display = "none";
+    A7.style.display = "none";
+    A8.style.display = "none";
+    A9.style.display = "none";
+    A10.style.display = "none";
+
+  }
+  else if(valorSeleccionado  == '5'){
+    precio = 25;
+    A1.style.display = "none";
+    A2.style.display = "none";
+    A3.style.display = "none";
+    A4.style.display = "none";
+    A5.style.display = "block";
+    A6.style.display = "none";
+    A7.style.display = "none";
+    A8.style.display = "none";
+    A9.style.display = "none";
+    A10.style.display = "none";
+
+  }
+  else if(valorSeleccionado  == '6'){
+    precio = 70;
+    A1.style.display = "none";
+    A2.style.display = "none";
+    A3.style.display = "none";
+    A4.style.display = "none";
+    A5.style.display = "none";
+    A6.style.display = "block";
+    A7.style.display = "none";
+    A8.style.display = "none";
+    A9.style.display = "none";
+    A10.style.display = "none";
+
+  }
+  else if(valorSeleccionado  == '7'){
+    precio = 80;
+    A1.style.display = "none";
+    A2.style.display = "none";
+    A3.style.display = "none";
+    A4.style.display = "none";
+    A5.style.display = "none";
+    A6.style.display = "none";
+    A7.style.display = "block";
+    A8.style.display = "none";
+    A9.style.display = "none";
+    A10.style.display = "none";
+
+  }
+  else if(valorSeleccionado  == '8'){
+    precio = 75;
+    A1.style.display = "none";
+    A2.style.display = "none";
+    A3.style.display = "none";
+    A4.style.display = "none";
+    A5.style.display = "none";
+    A6.style.display = "none";
+    A7.style.display = "none";
+    A8.style.display = "block";
+    A9.style.display = "none";
+    A10.style.display = "none";
+
+  }
+  else if(valorSeleccionado  == '9'){
+    precio = 80;
+    A1.style.display = "none";
+    A2.style.display = "none";
+    A3.style.display = "none";
+    A4.style.display = "none";
+    A5.style.display = "none";
+    A6.style.display = "none";
+    A7.style.display = "none";
+    A8.style.display = "none";
+    A9.style.display = "block";
+    A10.style.display = "none";
+
+  }
+  else if(valorSeleccionado  == '10'){
+    precio = 95;
+    A1.style.display = "none";
+    A2.style.display = "none";
+    A3.style.display = "none";
+    A4.style.display = "none";
+    A5.style.display = "none";
+    A6.style.display = "none";
+    A7.style.display = "none";
+    A8.style.display = "none";
+    A9.style.display = "none";
+    A10.style.display = "block";
+
+  }
+
+
+  
+function mostrarLabel(){
+	valorSeleccionado = select.value;
+  if(valorSeleccionado == '1'){
+      precio = 45;
+          A1.style.display = "block";
   		
           A2.style.display = "none";
           A3.style.display = "none";
@@ -231,4 +380,3 @@ calcular();
 
         
         
-
