@@ -531,3 +531,42 @@ div.content {
     background: #4CAF50;
     cursor: pointer;
 }
+
+
+/*responsive*/
+
+@media all and (max-width: 1200px) {
+    h1 {
+        border: 0.6rem outset rgb(246, 246, 247);
+        font-family: serif;
+        color: aliceblue;
+        text-align: center;
+        background-color: rgb(16, 19, 61);
+        width: 119%;
+        margin: 5% -8%;
+        position: relative;
+        height: 100%;
+        display: grid;
+    }
+    h2 {
+        border: 0.4rem outset rgb(251, 251, 252);
+        text-align: center;
+        background-color: rgb(5, 8, 32);
+        width: 50%rem;
+        position: relative;
+        height: 100%;
+        display: grid;
+    }
+    p {
+        text-align: center;
+        padding: 1px;
+        color: rgb(250, 248, 248);
+        background-color: rgb(4, 2, 37);
+        text-transform: uppercase;
+        width: 116%;
+        position: relative;
+        display: grid;
+        height: 200%;
+        margin: 5% -5%;
+    }
+}
