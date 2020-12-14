@@ -180,54 +180,78 @@ var sumarD = document.getElementById("mas3");
 var restarD = document.getElementById("menos3");
 var contadorD = document.getElementById("contador3");
 var costo = document.getElementById("costo");
+var calculo = document.getElementById("calcular");
 
-function calcular() {
-        
-        var precioadulto = Number.parseFloat(contadorD.value*precio).toFixed(2);
-        var adultos = Number.parseFloat(contadorA.value*precioadulto).toFixed(2);
 
-        var precionino = Number.parseFloat(contadorD.value*(precio*0.5)).toFixed(2);
-        
-        var ninos = Number.parseFloat(contadorN.value*precionino).toFixed(2);
-        
-
-        costo.value = Number.parseFloat(adultos+ninos).toFixed(2);
-  }
-        
 
         sumarA.onclick = function() {
           contadorA.value = Number(contadorA.value) + 1;
-          calcular();
+          final(calcular(),calcular2());
         };
   
         restarA.onclick = function() {
           contadorA.value = Number(contadorA.value) - 1;
-          calcular();
+          final(calcular(),calcular2());
         };
 
         sumarN.onclick = function() {
           contadorN.value = Number(contadorN.value) + 1;
-          calcular();
+          final(calcular(),calcular2());
         };
   
         restarN.onclick = function() {
           contadorN.value = Number(contadorN.value) - 1;
-          calcular();
+          final(calcular(),calcular2());
         };
 
         sumarD.onclick = function() {
           contadorD.value = Number(contadorD.value) + 1;
-          calcular();
+          final(calcular(),calcular2());
         };
   
         restarD.onclick = function() {
           contadorD.value = Number(contadorD.value) - 1;
-          calcular();
+          final(calcular(),calcular2());
         };
 
+        /*calculo.onclick = function(){
+          final(calcular(),calcular2());
+        } */
+
+      function calcular() {
+          var numdias = Number.parseFloat(contadorD.value).toFixed(2);
+          //var precioadulto = Number.parseFloat(contadorA.value*precio).toFixed(2);
+          //var adultos = Number.parseFloat(precioadulto*numdias).toFixed(2);
+          var descuento = precio * 0.5;
+          var ninos = Number.parseFloat(contadorN.value*descuento).toFixed(2);
+          var precionino = Number.parseFloat(ninos*numdias).toFixed(2);
+          //var total = adultos+precionino;
+        //costo.value = Number.parseFloat(adultos+precionino).toFixed(2);
+        var precio1  = Number.parseFloat(precionino).toFixed(2);
+        return Number.parseFloat(precio1);
+    } 
+    
+    function calcular2() {
+      var numdias = Number.parseFloat(contadorD.value).toFixed(2);
+      var precioadulto = Number.parseFloat(contadorA.value*precio).toFixed(2);
+      var adultos = Number.parseFloat(precioadulto*numdias).toFixed(2);
+      //var descuento = precio * 0.5;
+      //var ninos = Number.parseFloat(contadorN.value*descuento).toFixed(2);
+      //var precionino = Number.parseFloat(ninos*numdias).toFixed(2);
+      //var total = adultos+precionino;
+       var precio2 = Number.parseFloat(adultos).toFixed(2);
+    //costo.value = Number.parseFloat(precionino).toFixed(2);
+      return Number.parseFloat(precio2);
+    }
+
+    function final (precio1, precio2){
+        var total = precio1 + precio2;
+        costo.value = total; 
+    }
+          
         
     
-calcular();
+
 
         
         
