@@ -8,12 +8,6 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilo.css">
 </head>
-<style>
-    button {
-        width: 180px;
-        height: 50px;
-    }
-</style>
 <body style="background-color: #8fa1f1; ">
 
     <main>
@@ -38,47 +32,29 @@
             <h3 style="color:rgb(248, 248, 250)">Escríbenos y en breve los pondremos en contacto contigo</h3>
 
 
-            <form action="submeter-formulario.php" method="post">
-
-
-                <p>
-                    <label for="nombre" class="colocar_nombre">Nombre
-                      <span class="obligatorio">*</span>
-                    </label>
+            <form >
+                    <label class="labeel">Nombre</label>
                     <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-                </p>
-
-                <p>
-                    <label for="email" class="colocar_email">Email
-                      <span class="obligatorio">*</span>
-                    </label>
+                    <label class="labeel">Email</label>
                     <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-                </p>
-
-                <p>
-                    <label for="telefone" class="colocar_telefono">Teléfono
-                    </label>
+                    <label class="labeel">Teléfono</label>
                     <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-                </p>
+                    <label class="labeel">Mensaje </label>
+                    <textarea name="introducir_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+                
 
+                    <button type="submit" name="enviar_formulario" id="enviar">Enviar</button>
 
-
-                <p>
-                    <label for="mensaje" class="colocar_mensaje">Mensaje
-                      <span class="obligatorio">*</span>
-                    </label>
-                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
-                </p>
-
-                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
-
-                <p class="aviso">
-                    <span class="obligatorio"> * </span>los campos son obligatorios.
-                </p>
+                
+                   <label class="labeel">los campos son obligatorios.</label> 
+                
 
             </form>
         </div>
     </div>
+
+
+
     <footer class="ultimo">
         <p>RAPI RENTAS 2020 <br/>Autor :Amarilis Cueva, Edwin Hernández, Jefry Navas, Alisson Vizcaíno, Joel Yunga</p>
         

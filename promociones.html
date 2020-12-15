@@ -27,25 +27,43 @@
         width: 180px;
     }
 
+    @media only screen and (max-width: 375px) {
+        h2 {
+            
+            width: 95%;
+        }
+        h1{
+            width: 100%;
+        }
+        .ultimo,.principal2,.descripcion{
+            width: 95%;
+        }
+        .principal2,.descripcion{
+            width: 95%; 
+        }
+    }
     
 </style>
 
 <body>
     <audio src="media/ehrling-sthlm-sunset-1-hour.mp4" autoplay></audio>
-<header>
-    <nav>
-        <ul>
-            <li><a href="index.html"><img src="/img/logo.png" alt="imagen del logo" class="logo"></a></li>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="somos.html">QUIENES SOMOS</a></li>
-            <li><a href="anuncios.html">ANUNCIOS</a></li>
-            <li><a href="contactanos.html">CONTACTANOS</a></li>
-            
-        </ul>
+    <div class="menu">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><img src="/img/logo.png" alt="imagen del logo" class="logo"></a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="somos.html">QUIENES SOMOS</a></li>
+                    <li><a href="anuncios.html">ANUNCIOS</a></li>
+                    <li><a href="contactanos.html">CONTACTANOS</a></li>
+                    
+                </ul>
+                
+            </nav>
         
-    </nav>
+            </header>
+    </div>
 
-    </header>
     <h1>PROMOCIONES</h1>
 
     <main class="principal2">
@@ -118,7 +136,7 @@
             
         </div>
     </main>
-    <h2>15% OFF</h2>
+    <h2 class="promo">15% OFF</h2>
     <section class="principal2">
         <div class="contenedor2">
             
@@ -187,7 +205,7 @@
         </div>
         
     </section>
-    <h2>30% OFF</h2>
+    <h2 class="promo">30% OFF</h2>
 
     <section class="principal2">
         <div class="contenedor9">
@@ -255,7 +273,7 @@
             </div>
         </div>
     </section>
-    <h2>25% OFF</h2>
+    <h2 class="promo">25% OFF</h2>
     
     <footer class="ultimo">
         <p>RAPI RENTAS 2020 <br/>Autor :Amarilis Cueva, Edwin Hernández, Jefry Navas, Alisson Vizcaíno, Joel Yunga</p>

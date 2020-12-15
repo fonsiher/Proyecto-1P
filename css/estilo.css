@@ -2,7 +2,7 @@
 
 * {
     font-family: 'Anton', sans-serif;
-    margin: 1rem;
+    margin: 1%;
 }
 
 .fondo {
@@ -16,8 +16,7 @@ h1 {
     color: aliceblue;
     text-align: center;
     background-color: rgb(16, 19, 61);
-    width: 85rem;
-    margin: 5% -1.8%;
+    
 }
 
 .servicios {
@@ -95,7 +94,7 @@ nav {
     overflow: hidden;
     padding: 5px;
     width: 110%;
-    margin: 5% -2%;
+    margin: 0.5% -2%;
 }
 
 nav ul {
@@ -105,15 +104,7 @@ nav ul {
 }
 
 nav ul li {
-    /*Bordes redondeados*/
-    -webkit-border-radius: 5px;
-    /*Chrome y Safari*/
-    -moz-border-radius: 5px;
-    /*Firefox*/
-    -o-border-radius: 5px;
-    /*Opera*/
-    border-radius: 5px;
-    /*Estandar por defecto*/
+    
     float: left;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
@@ -195,7 +186,7 @@ img.anuncios {
 .principal {
     display: flex;
     text-align: center;
-    margin: auto;
+    
 }
 
 .principal2 {
@@ -329,8 +320,8 @@ img.anuncios {
 }
 
 .contact_form {
-    width: 560px;
-    height: auto;
+    width: 380px;
+    
     margin: 30px;
     border-radius: 3rem;
     padding-top: 0.1rem;
@@ -340,7 +331,9 @@ img.anuncios {
     padding-left: 0.1rem;
     margin-left: 25rem;
 }
-
+.contact_form textarea{
+    width: 85%;
+}
 .formulario input:focus {
     outline: 0;
     border: 0.1rem solid #080224;
@@ -532,10 +525,49 @@ div.content {
     cursor: pointer;
 }
 
+.labeel{
+    color: white;
+    text-align: center;
+}
+
 
 /*responsive*/
 
-@media all and (max-width: 1200px) {
+/*Contactanos*/
+@media only screen and (max-width: 375px) {
+    .contact_form,.formulario{
+        display: block;
+        margin: inherit;
+        width: 100%;
+    }
+  }
+
+/*Somos*/
+@media only screen and (max-width: 375px) {
+    .principal,.formularios,.ultimo{
+        display: block;
+        width: 100%;
+        padding: 0%;
+    }
+    .formularios h4{
+        width: 100%;
+        
+    }
+    .formularios img{
+        width: 100%;
+    }
+  }
+  
+
+  /*Index*/
+@media only screen and (max-width: 375px) {
+    
+
+    video{
+        width: 100%;
+        height: 100%;
+    }
+
     h1 {
         border: 0.6rem outset rgb(246, 246, 247);
         font-family: serif;
